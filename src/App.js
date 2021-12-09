@@ -1,9 +1,12 @@
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import Header from './components/Header';
+
 const App = () => (
-  <div className="App">
-    <header className="App-header">
-      <h1>Hola</h1>
-    </header>
-  </div>
+  <>
+    <Header />
+  </>
 );
 
 export default App;
