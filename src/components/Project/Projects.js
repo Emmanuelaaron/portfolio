@@ -8,6 +8,8 @@ import covidImage from '../../images/covid3.png';
 import spaceshipsImage from '../../images/spaceships.png';
 import moviesImage from '../../images/movies.png';
 import privateEventsImage from '../../images/private.png';
+import carBookingImage from '../../images/carBooking.png';
+import bookStoreImage from '../../images/bookstore.png';
 
 const Projects = () => {
   const projects = [
@@ -52,6 +54,30 @@ const Projects = () => {
       technogies: [
         'Ruby On Rails',
         'Ruby',
+        'CSS3',
+        'Bootstrap',
+        'HTML5',
+      ],
+    }, {
+      id: 5,
+      name: 'Car Booking',
+      image: carBookingImage,
+      technogies: [
+        'Ruby On Rails',
+        'React',
+        'Cloudinary',
+        'Ruby',
+        'CSS3',
+        'Bootstrap',
+        'HTML5',
+      ],
+    }, {
+      id: 6,
+      name: 'Book Store',
+      image: bookStoreImage,
+      technogies: [
+        'React',
+        'Javascript',
         'CSS3',
         'Bootstrap',
         'HTML5',
