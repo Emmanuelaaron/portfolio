@@ -1,0 +1,44 @@
+.topPage {
+    background-image: url("../images/Header-llustration-desktop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 40vw;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #172B4D;
+    ;
+}
+
+.sectionIntro {
+    margin-top: 12vw;
+}
+
+.card-title {
+    color: #172B4D;
+    font-size: 33px;
+}
+.soft {
+    color: #36B37E;
+    font-size: 33px;
+}
+
+.sectionparagraph,
+a,
+.recentWorks {
+    color: #172B4D;
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+.projectButton {
+    background: #EBF0EE;
+}
+
+.projectButton1 {
+    background: #36B37F;
+    color: #FFFFFF;
+
+}
