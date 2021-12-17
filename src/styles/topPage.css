@@ -5,6 +5,10 @@
     padding-bottom: 40vw;
 }
 
+body{
+    background-color: #dde2eb;
+}
+
 .navbar-light .navbar-nav .nav-link {
     color: #172B4D;
     ;
