@@ -86,7 +86,7 @@ const Projects = () => {
   ];
 
   return (
-    <div className="row justify-content-center">
+    <div className="row justify-content-center" id="portfolio">
       <h1 className="text-center mt-5 mb-4 recentWorks col-12">My Most Recent Projects</h1>
 
       <Row xs={1} md={3} className="g-4 col-10 text-center">

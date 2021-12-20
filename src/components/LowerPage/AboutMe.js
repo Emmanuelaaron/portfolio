@@ -3,7 +3,7 @@ import image from '../../images/illustration-about-me-2-desktop@2x.png';
 import image2 from '../../images/illustration-about-me-desktop.png';
 
 const AboutMe = () => (
-  <div className="row justify-content-center mt-4 ">
+  <div className="row justify-content-center mt-4 " id="about">
     <Row className="col-10 d-flex justify-content-center">
       <img src={image} alt="" className="background" />
       <img src={image2} alt="" className="background1" />

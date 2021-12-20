@@ -46,13 +46,13 @@ const ContactForm = () => {
     resetForm();
   };
   return (
-    <div className="row justify-content-center align-items-center mt-5">
-      <p className="col-4">
+    <div className="row justify-content-center align-items-center mt-5 formMail" id="contact">
+      <p className="col-10 col-md-4 text-center formTextMail">
         I&apos;m always interested in hearing
         about new projects, so if you&apos;d like to chat
         please get in touch.
       </p>
-      <Form className="col-6" onSubmit={handleSubmit}>
+      <Form className="col-10 col-md-6" onSubmit={handleSubmit}>
         <Form.Group className="d-flex mb-3">
           <Form.Control
             className="mx-2"
@@ -90,8 +90,8 @@ const ContactForm = () => {
             placeholder="Type your message here"
           />
         </Form.Group>
-        <Button variant="primary" type="submit">
-          Submit
+        <Button type="submit" className="projectButton4">
+          Get in Touch
         </Button>
       </Form>
     </div>

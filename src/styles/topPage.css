@@ -2,7 +2,6 @@
     background-image: url("../images/Header-llustration-desktop.png");
     background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: 40vw;
 }
 
 .background {
@@ -21,7 +20,7 @@
 
 .aboutMe {
     position: relative;
-    bottom: 318px;
+    bottom: 222px;
 }
 
 body{
@@ -30,7 +29,6 @@ body{
 
 .navbar-light .navbar-nav .nav-link {
     color: #172B4D;
-    ;
 }
 
 .sectionIntro {
@@ -69,7 +67,9 @@ a,
     background: #EBF0EE;
 }
 
-.projectButton1 {
+.projectButton1,
+.projectButton4,
+.projectButton4:hover {
     background: #36B37F;
     color: #FFFFFF;
 
@@ -93,4 +93,26 @@ a,
 #skills {
     position: relative;
     bottom: 20%;
+}
+
+.formTextMail {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0em;
+    color: #172B4D;
+}
+
+@media (max-width: 703px) {
+    .aboutMe {
+        bottom: 111px;
+    }
+}
+
+@media (max-width: 749px) {
+    .topPage {
+        background-image: url("../images/illustration-about-me-desktop.png");
+        background-size: contain;
+    }
 }
