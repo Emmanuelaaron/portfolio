@@ -37,7 +37,7 @@ const Projects = () => {
       ],
     }, {
       id: 3,
-      name: 'Movies and Series',
+      name: 'Movies & Series',
       image: moviesImage,
       technogies: [
         'React',
@@ -92,7 +92,7 @@ const Projects = () => {
       <Row xs={1} md={3} className="g-4 col-10 text-center">
         {projects.map((project) => (
           <Col key={project.id}>
-            <Card>
+            <Card className="rounded-top">
               <Card.Img variant="top" src={project.image} />
               <Card.Body>
                 <Card.Title className="text-center">{project.name}</Card.Title>

@@ -5,6 +5,25 @@
     padding-bottom: 40vw;
 }
 
+.background {
+    width: 209px;
+    height: 114px;
+    position: relative;
+    top: 213px;
+    right: 53%;
+}
+
+.background1 {
+    position: relative;
+    bottom: 74px;
+    left: 11%;
+}
+
+.aboutMe {
+    position: relative;
+    bottom: 318px;
+}
+
 body{
     background-color: #dde2eb;
 }
@@ -20,17 +39,21 @@ body{
 
 .card-title {
     color: #172B4D;
-    font-size: 33px;
+    font-size: 44px;
 }
 .soft {
     color: #36B37E;
-    font-size: 33px;
+    font-size: 44px;
 }
 
 .sectionparagraph,
 a,
 .recentWorks {
     color: #172B4D;
+}
+
+.sectionparagraph {
+    font-size: 25px;
 }
 
 .card-img-top {
