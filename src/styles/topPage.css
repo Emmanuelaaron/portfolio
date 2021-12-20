@@ -46,14 +46,19 @@ body{
     font-size: 44px;
 }
 
-.sectionparagraph,
 a,
-.recentWorks {
+.recentWorks,
+.aboutMeHeading {
     color: #172B4D;
 }
 
+.aboutMeText,
 .sectionparagraph {
-    font-size: 25px;
+    color: #42526E;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 32px;
+    font-weight: 400;
 }
 
 .card-img-top {
@@ -68,4 +73,24 @@ a,
     background: #36B37F;
     color: #FFFFFF;
 
+}
+
+.projectButton2 {
+    background: #FFFFFF;
+    color: #36B37F;
+}
+
+.iconImage {
+    height: 55px;
+    width: 55px;
+}
+
+.skillsCard {
+    background: #EBF0EE;
+    color: #172B4D;
+}
+
+#skills {
+    position: relative;
+    bottom: 20%;
 }
