@@ -5,6 +5,7 @@ import TopPage from './components/TopPage/TopPage';
 import Projects from './components/Project/Projects';
 import AboutMe from './components/LowerPage/AboutMe';
 import Skills from './components/LowerPage/Skills';
+import ContactForm from './components/LowerPage/ContactUs';
 
 const App = () => (
   <>
@@ -12,6 +13,7 @@ const App = () => (
     <Projects />
     <AboutMe />
     <Skills />
+    <ContactForm />
   </>
 );
 

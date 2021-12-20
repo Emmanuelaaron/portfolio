@@ -98,7 +98,7 @@ const Projects = () => {
                 <Card.Title className="text-center">{project.name}</Card.Title>
                 <section className="bg-ino text-center">
                   {project.technogies.map((technology) => (
-                    <button key="1" type="button" className="btn projectButton mx-1 mt-2">{technology}</button>
+                    <button key={technology} type="button" className="btn projectButton mx-1 mt-2">{technology}</button>
                   ))}
                 </section>
                 <section className="mt-2 text-center">

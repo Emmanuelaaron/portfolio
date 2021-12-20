@@ -9,12 +9,12 @@ const AboutMe = () => (
       <img src={image2} alt="" className="background1" />
       <section className="w-75 text-center aboutMe">
         <h1 className="text-center aboutMeHeading">About Me</h1>
-        <text className="w-100 text-center aboutMeText">
+        <p className="w-100 text-center aboutMeText">
           I can help you build a product ,
           feature or website Look through some of my work
           and experience! If you like what you see and have a project you need coded,
           don’t hestiate to contact me.
-        </text>
+        </p>
         <section className="mt-2 text-center">
           <button type="button" className="btn projectButton1 mx-2">Get My Resume</button>
         </section>

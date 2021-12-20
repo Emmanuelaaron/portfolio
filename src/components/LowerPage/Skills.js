@@ -56,7 +56,7 @@ const Skills = () => {
                 <h4>{skill.name}</h4>
                 <section className="text-center">
                   {skill.technologies.map((technology) => (
-                    <button key="1" type="button" className="btn projectButton2 mx-1 mt-2">{technology}</button>
+                    <button key={technology} type="button" className="btn projectButton2 mx-1 mt-2">{technology}</button>
                   ))}
                 </section>
               </Card.Body>
