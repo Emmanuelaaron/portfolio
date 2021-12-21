@@ -18,6 +18,20 @@
     left: 11%;
 }
 
+.bottomImage {
+    background-image: url("../images/Frame.png");
+    height: 323px;
+    width: 100px;
+}
+
+.bottomImage1 {
+    background-image: url("../images/Frame1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 323px;
+    width: 100px;
+}
+
 .aboutMe {
     position: relative;
     bottom: 222px;
