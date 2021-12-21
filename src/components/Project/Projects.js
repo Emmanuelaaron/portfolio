@@ -3,20 +3,59 @@ import {
   Col,
   Card,
 } from 'react-bootstrap';
-
+import { FaMars, FaGithubSquare } from 'react-icons/fa';
+import { useState } from 'react';
 import covidImage from '../../images/covid3.png';
 import spaceshipsImage from '../../images/spaceships.png';
 import moviesImage from '../../images/movies.png';
 import privateEventsImage from '../../images/private.png';
 import carBookingImage from '../../images/carBooking.png';
 import bookStoreImage from '../../images/bookstore.png';
+import '../../styles/project.css';
 
 const Projects = () => {
+  const [popUpContent, setPopUpContent] = useState({
+    image: '',
+    name: '',
+    description: '',
+    technogies: [],
+    display: 'd-none',
+  });
+
+  const dePopulate = () => {
+    setPopUpContent({
+      ...popUpContent,
+      mage: '',
+      name: '',
+      description: '',
+      technogies: [],
+      display: 'd-none',
+    });
+    console.log(popUpContent);
+  };
+
+  const populatePopUp = (
+    image,
+    name, desc,
+    technogies,
+  ) => {
+    setPopUpContent({
+      ...popUpContent,
+      image,
+      name,
+      description: desc,
+      technogies,
+      display: 'd-block',
+    });
+    console.log(popUpContent);
+  };
+
   const projects = [
     {
       id: 1,
       name: 'Covid 19 Updates',
       image: covidImage,
+      description: 'This is a mobile web application that showcases live data about covid 19 worldwide for different countries.',
       technogies: [
         'React',
         'CSS3',
@@ -27,6 +66,7 @@ const Projects = () => {
       id: 2,
       name: 'Spaceships',
       image: spaceshipsImage,
+      description: 'This is a web application that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
       technogies: [
         'React',
         'Redux',
@@ -39,6 +79,7 @@ const Projects = () => {
       id: 3,
       name: 'Movies & Series',
       image: moviesImage,
+      description: 'The Series lover website displays scores submitted by different series. It also allows users to submit their comments in every serie show. All data is preserved thanks to the external TVmaze API, the user can like his favourite serie thanks to Involvement API',
       technogies: [
         'React',
         'Redux',
@@ -51,6 +92,7 @@ const Projects = () => {
       id: 4,
       name: 'Private Events',
       image: privateEventsImage,
+      description: 'This is a site Similar eventbrite with a demonstration of associations in Rails. Users are able to create events and add people to these events',
       technogies: [
         'Ruby On Rails',
         'Ruby',
@@ -62,6 +104,7 @@ const Projects = () => {
       id: 5,
       name: 'Car Booking',
       image: carBookingImage,
+      description: 'This is a web app that enables users to book an appointment to try their dream cars',
       technogies: [
         'Ruby On Rails',
         'React',
@@ -75,6 +118,7 @@ const Projects = () => {
       id: 6,
       name: 'Book Store',
       image: bookStoreImage,
+      description: 'This is a React-Redux project which allows users to add and remove books from a store',
       technogies: [
         'React',
         'Javascript',
@@ -102,13 +146,49 @@ const Projects = () => {
                   ))}
                 </section>
                 <section className="mt-2 text-center">
-                  <button type="button" className="btn projectButton1 mx-2">See Project</button>
+                  <button
+                    type="button"
+                    className="btn projectButton1 mx-2"
+                    onClick={() => populatePopUp(
+                      project.image,
+                      project.name,
+                      project.description,
+                      project.technogies,
+                    )}
+                  >
+                    See Project
+                  </button>
                 </section>
               </Card.Body>
             </Card>
           </Col>
         ))}
       </Row>
+      <Card className={`col-12 bg- popup d-flex align-items-center pt-3 ${popUpContent.display}`}>
+        <Card.Body className=" w-75">
+          <span className="close-icon" onClick={() => dePopulate()} onKeyPress={() => dePopulate()} role="button" tabIndex={0}>x</span>
+          <Card.Img variant="top" src={popUpContent.image} className="h-50 w-100 w-50" />
+          <div className="mt-3 d-flex justify-content-between align-items-center">
+            <Card.Title className="popupName">{popUpContent.name}</Card.Title>
+            <div className="d-flex">
+              <a href="#f" type="button" className="btn d-flex align-items-center mx-2 popUpBtn">
+                <span className="mx-1">See live</span>
+                <FaMars />
+              </a>
+              <a href="#f" type="button" className="btn d-flex align-items-center popUpBtn">
+                <span className="mx-2">See live</span>
+                <FaGithubSquare />
+              </a>
+            </div>
+          </div>
+          <section className="col-6">
+            {popUpContent.technogies.map((technology) => (
+              <button key={technology} type="button" className="btn projectButtonn mx-1 mt-2">{technology}</button>
+            ))}
+          </section>
+          <Card.Text className="col-6 mt-lg-5">{popUpContent.description}</Card.Text>
+        </Card.Body>
+      </Card>
     </div>
   );
 };
