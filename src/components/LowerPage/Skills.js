@@ -12,7 +12,8 @@ const Skills = () => {
       technologies: [
         'Python',
         'Ruby',
-        'HTML',
+        'HTML5',
+        'CSS3',
         'Javascript',
         'SQL',
       ],

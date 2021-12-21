@@ -1,132 +1,132 @@
 .topPage {
-    background-image: url("../images/Header-llustration-desktop.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+  background-image: url("../images/Header-llustration-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .background {
-    width: 209px;
-    height: 114px;
-    position: relative;
-    top: 213px;
-    right: 53%;
+  width: 209px;
+  height: 114px;
+  position: relative;
+  top: 213px;
+  right: 53%;
 }
 
 .background1 {
-    position: relative;
-    bottom: 74px;
-    left: 11%;
+  position: relative;
+  bottom: 74px;
+  left: 11%;
 }
 
 .bottomImage {
-    background-image: url("../images/Frame.png");
-    height: 323px;
-    width: 150px;
+  background-image: url("../images/Frame.png");
+  height: 323px;
+  width: 150px;
 }
 
 .bottomImage1 {
-    background-image: url("../images/Frame1.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 323px;
-    width: 100px;
+  background-image: url("../images/Frame1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 323px;
+  width: 100px;
 }
 
 .aboutMe {
-    position: relative;
-    bottom: 222px;
+  position: relative;
+  bottom: 222px;
 }
 
-body{
-    background-color: #dde2eb;
+body {
+  background-color: #dde2eb;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #172B4D;
+  color: #172b4d;
 }
 
 .sectionIntro {
-    margin-top: 12vw;
+  margin-top: 12vw;
 }
 
 .card-title {
-    color: #172B4D;
-    font-size: 44px;
+  color: #172b4d;
+  font-size: 44px;
 }
+
 .soft {
-    color: #36B37E;
-    font-size: 44px;
+  color: #36b37e;
+  font-size: 44px;
 }
 
 a,
 .recentWorks,
 .aboutMeHeading {
-    color: #172B4D;
+  color: #172b4d;
 }
 
 .aboutMeText,
 .sectionparagraph {
-    color: #42526E;
-    font-size: 20px;
-    font-style: normal;
-    line-height: 32px;
-    font-weight: 400;
+  color: #42526e;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 32px;
+  font-weight: 400;
 }
 
 .card-img-top {
-    width: 100%;
+  width: 100%;
 }
 
 .projectButton {
-    background: #EBF0EE;
+  background: #ebf0ee;
 }
 
 .projectButton1,
 .projectButton4,
 .projectButton4:hover {
-    background: #36B37F;
-    color: #FFFFFF;
-
+  background: #36b37f;
+  color: #fff;
 }
 
 .projectButton2 {
-    background: #FFFFFF;
-    color: #36B37F;
+  background: #fff;
+  color: #36b37f;
 }
 
 .iconImage {
-    height: 55px;
-    width: 55px;
+  height: 55px;
+  width: 55px;
 }
 
 .skillsCard {
-    background: #EBF0EE;
-    color: #172B4D;
+  background: #ebf0ee;
+  color: #172b4d;
 }
 
 #skills {
-    position: relative;
-    bottom: 20%;
+  position: relative;
+  bottom: 20%;
 }
 
 .formTextMail {
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 52px;
-    letter-spacing: 0em;
-    color: #172B4D;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0;
+  color: #172b4d;
 }
 
 @media (max-width: 703px) {
-    .aboutMe {
-        bottom: 111px;
-    }
+  .aboutMe {
+    bottom: 111px;
+  }
 }
 
 @media (max-width: 749px) {
-    .topPage {
-        background-image: url("../images/illustration-about-me-desktop.png");
-        background-size: contain;
-    }
+  .topPage {
+    background-image: url("../images/illustration-about-me-desktop.png");
+    background-size: contain;
+  }
 }
