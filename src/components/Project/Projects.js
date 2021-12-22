@@ -135,7 +135,7 @@ const Projects = () => {
       name: 'Book Store',
       image: bookStoreImage,
       description: 'This is a React-Redux project which allows users to add and remove books from a store',
-      live: '#f',
+      live: 'https://bookstorre.netlify.app/',
       sourceCode: 'https://github.com/Emmanuelaaron/book-store',
       technogies: [
         'React',
