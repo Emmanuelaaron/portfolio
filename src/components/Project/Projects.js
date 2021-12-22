@@ -18,6 +18,8 @@ const Projects = () => {
     image: '',
     name: '',
     description: '',
+    live: '',
+    sourceCode: '',
     technogies: [],
     display: 'd-none',
   });
@@ -28,15 +30,18 @@ const Projects = () => {
       mage: '',
       name: '',
       description: '',
+      live: '',
+      sourceCode: '',
       technogies: [],
       display: 'd-none',
     });
-    console.log(popUpContent);
   };
 
   const populatePopUp = (
     image,
     name, desc,
+    live,
+    sourceCode,
     technogies,
   ) => {
     setPopUpContent({
@@ -44,10 +49,11 @@ const Projects = () => {
       image,
       name,
       description: desc,
+      live,
+      sourceCode,
       technogies,
       display: 'd-block',
     });
-    console.log(popUpContent);
   };
 
   const projects = [
@@ -56,6 +62,8 @@ const Projects = () => {
       name: 'Covid 19 Updates',
       image: covidImage,
       description: 'This is a mobile web application that showcases live data about covid 19 worldwide for different countries.',
+      live: 'https://covid19-data-updates.netlify.app/',
+      sourceCode: 'https://github.com/Emmanuelaaron/covid-19-updates',
       technogies: [
         'React',
         'CSS3',
@@ -67,6 +75,8 @@ const Projects = () => {
       name: 'Spaceships',
       image: spaceshipsImage,
       description: 'This is a web application that provides commercial and scientific space travel services. The application will allow users to book rockets and join selected space missions.',
+      live: 'https://spaceships-emma-enio-mario.netlify.app/',
+      sourceCode: 'https://github.com/Emmanuelaaron/spaceships',
       technogies: [
         'React',
         'Redux',
@@ -80,6 +90,8 @@ const Projects = () => {
       name: 'Movies & Series',
       image: moviesImage,
       description: 'The Series lover website displays scores submitted by different series. It also allows users to submit their comments in every serie show. All data is preserved thanks to the external TVmaze API, the user can like his favourite serie thanks to Involvement API',
+      live: 'https://hamzaoutdoors.github.io/Serie_Lovers---JS-Capstone-/',
+      sourceCode: 'https://github.com/Hamzaoutdoors/Serie_Lovers---JS-Capstone-',
       technogies: [
         'React',
         'Redux',
@@ -93,6 +105,8 @@ const Projects = () => {
       name: 'Private Events',
       image: privateEventsImage,
       description: 'This is a site Similar eventbrite with a demonstration of associations in Rails. Users are able to create events and add people to these events',
+      live: 'https://private-events-1.herokuapp.com/',
+      sourceCode: 'https://github.com/Emmanuelaaron/private-events',
       technogies: [
         'Ruby On Rails',
         'Ruby',
@@ -105,6 +119,8 @@ const Projects = () => {
       name: 'Car Booking',
       image: carBookingImage,
       description: 'This is a web app that enables users to book an appointment to try their dream cars',
+      live: '#f',
+      sourceCode: 'https://github.com/Emmanuelaaron/carBooking',
       technogies: [
         'Ruby On Rails',
         'React',
@@ -119,6 +135,8 @@ const Projects = () => {
       name: 'Book Store',
       image: bookStoreImage,
       description: 'This is a React-Redux project which allows users to add and remove books from a store',
+      live: '#f',
+      sourceCode: 'https://github.com/Emmanuelaaron/book-store',
       technogies: [
         'React',
         'Javascript',
@@ -153,6 +171,8 @@ const Projects = () => {
                       project.image,
                       project.name,
                       project.description,
+                      project.live,
+                      project.sourceCode,
                       project.technogies,
                     )}
                   >
@@ -171,12 +191,12 @@ const Projects = () => {
           <div className="mt-3 d-flex justify-content-between align-items-center">
             <Card.Title className="popupName">{popUpContent.name}</Card.Title>
             <div className="d-flex">
-              <a href="#f" type="button" className="btn d-flex align-items-center mx-2 popUpBtn">
+              <a href={popUpContent.live} target="_blank" rel="noreferrer" className="btn d-flex align-items-center mx-2 popUpBtn">
                 <span className="mx-1">See live</span>
                 <FaMars />
               </a>
-              <a href="#f" type="button" className="btn d-flex align-items-center popUpBtn">
-                <span className="mx-2">See live</span>
+              <a href={popUpContent.sourceCode} target="_blank" rel="noreferrer" className="btn d-flex align-items-center popUpBtn">
+                <span className="mx-2">See Source</span>
                 <FaGithubSquare />
               </a>
             </div>
