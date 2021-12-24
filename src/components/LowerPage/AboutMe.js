@@ -16,7 +16,7 @@ const AboutMe = () => (
           don’t hestiate to contact me.
         </p>
         <section className="mt-2 text-center">
-          <button type="button" className="btn projectButton1 mx-2">Get My Resume</button>
+          <a href="https://docs.google.com/document/d/16PGKQZ7WvaYKlDppnTBmM36x5NTuQ0s_tdciHfW9mE0/edit?usp=sharing" target="_blank" rel="noreferrer" className="btn projectButton1 mx-2">Get My Resume</a>
         </section>
       </section>
     </Row>
