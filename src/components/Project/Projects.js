@@ -184,13 +184,13 @@ const Projects = () => {
           </Col>
         ))}
       </Row>
-      <Card className={`col-12 bg- popup d-flex align-items-center pt-3 ${popUpContent.display}`}>
-        <Card.Body className=" w-75">
+      <Card className={`col-12 popup d-flex align-items-center ${popUpContent.display}`}>
+        <Card.Body className=" popup-card-display">
           <span className="close-icon" onClick={() => dePopulate()} onKeyPress={() => dePopulate()} role="button" tabIndex={0}>x</span>
-          <Card.Img variant="top" src={popUpContent.image} className="h-50 w-100 w-50" />
-          <div className="mt-3 d-flex justify-content-between align-items-center">
+          <Card.Img variant="top" src={popUpContent.image} className="h-50 w-100" />
+          <div className="mt-3 d-flex justify-content-between align-items-center flex-wrap popup-buttons">
             <Card.Title className="popupName">{popUpContent.name}</Card.Title>
-            <div className="d-flex">
+            <div className="d-flex popup-buttons" id="popup-buttons">
               <a href={popUpContent.live} target="_blank" rel="noreferrer" className="btn d-flex align-items-center mx-2 popUpBtn">
                 <span className="mx-1">See live</span>
                 <FaMars />
@@ -201,12 +201,12 @@ const Projects = () => {
               </a>
             </div>
           </div>
-          <section className="col-6">
+          <section className="col-md-6">
             {popUpContent.technogies.map((technology) => (
               <button key={technology} type="button" className="btn projectButtonn mx-1 mt-2">{technology}</button>
             ))}
           </section>
-          <Card.Text className="col-6 mt-lg-5">{popUpContent.description}</Card.Text>
+          <Card.Text className="col-lg-12 mt-md-5 popup-description">{popUpContent.description}</Card.Text>
         </Card.Body>
       </Card>
     </div>
