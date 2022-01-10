@@ -1,0 +1,195 @@
+.topPage {
+  background-image: url("../images/Header-llustration-desktop.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.background {
+  width: 209px;
+  height: 114px;
+  position: relative;
+  top: 213px;
+  right: 53%;
+}
+
+.background1 {
+  position: relative;
+  bottom: 74px;
+  left: 11%;
+}
+
+.popup {
+  justify-content: center;
+  position: fixed;
+  opacity: 0.95;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: #c1c7d0;
+  overflow: scroll;
+}
+
+.popupName {
+  color: red;
+}
+
+.bottomImage {
+  background-image: url("../images/Frame.png");
+  height: 323px;
+  width: 150px;
+}
+
+.bottomImage1 {
+  background-image: url("../images/Frame1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 323px;
+  width: 100px;
+}
+
+.aboutMe {
+  position: relative;
+  bottom: 222px;
+}
+
+body {
+  background-color: #dde2eb;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #172b4d;
+}
+
+.sectionIntro {
+  margin-top: 12vw;
+}
+
+.card-title {
+  color: #172b4d;
+  font-size: 44px;
+}
+
+.soft {
+  color: #36b37e;
+  font-size: 44px;
+}
+
+a,
+.recentWorks,
+.aboutMeHeading {
+  color: #172b4d;
+}
+
+.aboutMeText,
+.sectionparagraph {
+  color: #42526e;
+  font-size: 20px;
+  font-style: normal;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.card-img-top {
+  width: 100%;
+}
+
+.projectButton {
+  background: #ebf0ee;
+}
+
+.projectButton1,
+.projectButton4,
+.projectButton4:hover,
+.popUpBtn {
+  background: #36b37f;
+  color: #fff;
+}
+
+.projectButtonn {
+  background-color: #ebecf0;
+  color: #344563;
+}
+
+.projectButton2 {
+  background: #fff;
+  color: #36b37f;
+}
+
+.iconImage {
+  height: 55px;
+  width: 55px;
+}
+
+.skillsCard {
+  background: #ebf0ee;
+  color: #172b4d;
+}
+
+#skills {
+  position: relative;
+  bottom: 20%;
+}
+
+.formTextMail {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0;
+  color: #172b4d;
+}
+
+.close-icon {
+  content: 'x';
+  cursor: pointer;
+  position: fixed;
+  right: calc(15% - 2px);
+  top: calc(100vh - 85vh - 97px);
+  background: #ededed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  border: 1px solid #999;
+  font-size: 20px;
+}
+
+@media (max-width: 570px) {
+  .popup-buttons {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 703px) {
+  .aboutMe {
+    bottom: 111px;
+  }
+}
+
+@media (max-width: 749px) {
+  .topPage {
+    background-image: url("../images/illustration-about-me-desktop.png");
+    background-size: contain;
+  }
+}
+
+@media (min-width: 638px) {
+  .popup-card-display {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 656px) {
+  .popup-card-display {
+    max-width: 100%;
+  }
+
+  .popup-description {
+    margin-top: 30px;
+  }
+}
