@@ -7,7 +7,7 @@ import { FaMars, FaGithubSquare } from 'react-icons/fa';
 import { useState } from 'react';
 import covidImage from '../../images/covid3.png';
 import spaceshipsImage from '../../images/spaceships.png';
-import moviesImage from '../../images/movies.png';
+import calculatorImage from '../../images/calculatore.png';
 import privateEventsImage from '../../images/private.png';
 import carBookingImage from '../../images/carBooking.png';
 import bookStoreImage from '../../images/bookstore.png';
@@ -87,14 +87,13 @@ const Projects = () => {
       ],
     }, {
       id: 3,
-      name: 'Movies & Series',
-      image: moviesImage,
-      description: 'The Series lover website displays scores submitted by different series. It also allows users to submit their comments in every serie show. All data is preserved thanks to the external TVmaze API, the user can like his favourite serie thanks to Involvement API',
-      live: 'https://hamzaoutdoors.github.io/Serie_Lovers---JS-Capstone-/',
-      sourceCode: 'https://github.com/Hamzaoutdoors/Serie_Lovers---JS-Capstone-',
+      name: 'Calulator',
+      image: calculatorImage,
+      description: 'This is a React project which demonstrates the logic of a simple calculator',
+      live: 'https://emmanuelaaron.github.io/math-magicians/',
+      sourceCode: 'https://github.com/Emmanuelaaron/math-magicians',
       technogies: [
         'React',
-        'Redux',
         'CSS3',
         'Bootstrap',
         'HTML5',
