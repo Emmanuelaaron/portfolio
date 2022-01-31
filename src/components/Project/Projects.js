@@ -87,7 +87,7 @@ const Projects = () => {
       ],
     }, {
       id: 3,
-      name: 'Calulator',
+      name: 'Calculator',
       image: calculatorImage,
       description: 'This is a React project which demonstrates the logic of a simple calculator',
       live: 'https://emmanuelaaron.github.io/math-magicians/',
